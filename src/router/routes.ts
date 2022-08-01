@@ -1,11 +1,22 @@
 export default [
   {
     path: "/",
-    name: "Home",
+    name: "Index",
     meta: {
-      title: "主页",
+      title: "首页",
     },
     component: () => import("/@/views/layout/Index.vue"),
+    children: [
+      {
+        path: "/",
+        name: "Index",
+        hidden: true,
+        meta: {
+          title: "首页",
+        },
+        component: () => import("/@/views/home/Index.vue"),
+      },
+    ],
   },
   {
     path: "/fundamentals",
@@ -30,6 +41,24 @@ export default [
           title: "模块二",
         },
         component: () => import("/@/views/fundamentals/partTwo.vue"),
+      },
+    ],
+  },
+  {
+    path: "/test",
+    name: "Test",
+    meta: {
+      title: "主页",
+    },
+    component: () => import("/@/views/layout/Index.vue"),
+    children: [
+      {
+        path: "/test",
+        name: "Test",
+        meta: {
+          title: "首页",
+        },
+        component: () => import("/@/views/home/Index.vue"),
       },
     ],
   },
