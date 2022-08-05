@@ -22,7 +22,7 @@ export default [
     path: "/fundamentals",
     name: "Fundamentals",
     meta: {
-      title: "基础知识",
+      title: "js基础",
     },
     component: () => import("/@/views/layout/Index.vue"),
     children: [
@@ -30,7 +30,7 @@ export default [
         path: "/partOne",
         name: "PartOne",
         meta: {
-          title: "模块一",
+          title: "js基础一",
         },
         component: () => import("/@/views/fundamentals/partOne.vue"),
       },
@@ -38,27 +38,27 @@ export default [
         path: "/partTwo",
         name: "PartTwo",
         meta: {
-          title: "模块二",
+          title: "js基础二",
         },
         component: () => import("/@/views/fundamentals/partTwo.vue"),
       },
     ],
   },
   {
-    path: "/test",
-    name: "Test",
+    path: "/domAndEvents",
+    name: "DomAndEvents",
     meta: {
-      title: "主页",
+      title: "dom及events基础",
     },
     component: () => import("/@/views/layout/Index.vue"),
     children: [
       {
-        path: "/test",
-        name: "Test",
+        path: "/guessNumber",
+        name: "GuessNumber",
         meta: {
-          title: "首页",
+          title: "猜数字",
         },
-        component: () => import("/@/views/home/Index.vue"),
+        component: () => import("/@/views/dom-events/guessNumber.vue"),
       },
     ],
   },

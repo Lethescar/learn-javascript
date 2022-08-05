@@ -426,4 +426,132 @@ export const columns: TableColumnType[] = [
     title: "运算符",
     dataIndex: "individualOperators",
   },
-]; 
+];
+
+export const arrayData = [
+  {
+    method: 'concat()',
+    describe: '连接两个或多个数组，并返回已连接数组的副本。',
+  },
+  {
+    method: 'every()',
+    describe: '检查数组中的每个元素是否通过测试。',
+  },
+  {
+    method: 'filter()',
+    describe: '使用数组中通过测试的每个元素创建新数组。',
+  },
+  {
+    method: 'find()',
+    describe: '返回数组中第一个通过测试的元素的值。',
+  },
+  {
+    method: 'findIndex()',
+    describe: '返回数组中通过测试的第一个元素的索引。',
+  },
+  {
+    method: 'forEach()',
+    describe: '为每个数组元素调用函数。',
+  },
+  {
+    method: 'includes()',
+    describe: '检查数组是否包含指定的元素。',
+  },
+  {
+    method: 'indexOf()',
+    describe: '在数组中搜索元素并返回其位置。',
+  },
+  {
+    method: 'isArray()',
+    describe: '检查对象是否为数组。',
+  },
+  {
+    method: 'join()',
+    describe: '将数组的所有元素连接成一个字符串。',
+  },
+  {
+    method: 'keys()',
+    describe: '返回 Array Iteration 对象，包含原始数组的键.',
+  },
+  {
+    method: 'map()',
+    describe: '使用为每个数组元素调用函数的结果创建新数组。',
+  },
+  {
+    method: 'pop()',
+    describe: '删除数组的最后一个元素，并返回该元素。',
+  },
+  {
+    method: 'push()',
+    describe: '将新元素添加到数组的末尾，并返回新的长度。',
+  },
+  {
+    method: 'reduce()',
+    describe: '将数组的值减为单个值（从左到右）。',
+  },
+  {
+    method: 'reduceRight()',
+    describe: '将数组的值减为单个值（从右到左）。',
+  },
+  {
+    method: 'reverse()',
+    describe: '反转数组中元素的顺序。',
+  },
+  {
+    method: 'shift()',
+    describe: '删除数组的第一个元素，并返回该元素。',
+  },
+  {
+    method: 'slice()',
+    describe: '选择数组的一部分，并返回新数组。',
+  },
+  {
+    method: 'some()',
+    describe: '检查数组中的任何元素是否通过测试。',
+  },
+  {
+    method: 'sort()',
+    describe: '对数组的元素进行排序。',
+  },
+  {
+    method: 'splice()',
+    describe: '从数组中添加/删除元素。',
+  },
+  {
+    method: 'toString()',
+    describe: '将数组转换为字符串，并返回结果。',
+  },
+  {
+    method: 'unshift()',
+    describe: '将新元素添加到数组的开头，并返回新的长度。',
+  },
+];
+
+export const arrayColumns: TableColumnType[] = [
+  {
+    title: "方法",
+    dataIndex: "method",
+  },
+  {
+    title: "描述",
+    dataIndex: "describe",
+  },
+]
+
+// 人物对象属性
+export interface personParams {
+  name: string;
+  alias: string[];
+  clan: string;
+  realm: string;
+  wife: string[];
+  [keyName: string]: any; //动态添加属性 
+}
+
+// 编码挑战 BMI
+export interface BMIParams {
+  fullName: string;
+  mass: number;
+  height: number;
+  [keyName: string]: any
+}
