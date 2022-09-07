@@ -53,12 +53,54 @@ export default [
     component: () => import("/@/views/layout/Index.vue"),
     children: [
       {
+        path: "/knowledge",
+        name: "Knowledge",
+        meta: {
+          title: "知识点",
+        },
+        component: () => import("/@/views/dom-events/knowledge.vue"),
+      },
+      {
         path: "/guessNumber",
         name: "GuessNumber",
         meta: {
           title: "猜数字",
         },
         component: () => import("/@/views/dom-events/guessNumber.vue"),
+      },
+      {
+        path: "/windowModal",
+        name: "WindowModal",
+        meta: {
+          title: "弹窗",
+        },
+        component: () => import("../views/dom-events/windowModal.vue"),
+      },
+      {
+        path: "/pigGame",
+        name: "PigGame",
+        meta: {
+          title: "掷骰子",
+        },
+        component: () => import("../views/dom-events/pigGame.vue"),
+      },
+    ],
+  },
+  {
+    path: "/dataStructuresOperators",
+    name: "DataStructuresOperators",
+    meta: {
+      title: "数据结构及运算符",
+    },
+    component: () => import("/@/views/layout/Index.vue"),
+    children: [
+      {
+        path: "/data",
+        name: "Data",
+        meta: {
+          title: "知识点",
+        },
+        component: () => import("/@/views/data-structures-operators/index.vue"),
       },
     ],
   },

@@ -42,7 +42,7 @@
               </li>
               <li>
                 <p>创建isArray()函数</p>
-                <a-textarea :value="isArrayFunText" autosize readonly
+                <a-textarea :value="isArrayFunText" autoSize readonly
                   class="!w-[400px] !bg-transparent !text-white !mb-4">
                 </a-textarea>
                 <p>解释:假如对象原型包含单词 "Array" 则返回 true</p>
