@@ -95,12 +95,21 @@ export default [
     component: () => import("/@/views/layout/Index.vue"),
     children: [
       {
-        path: "/data",
-        name: "Data",
+        path: "/dataStructuresOperators/knowledge",
+        name: "DataKnowledge",
         meta: {
           title: "知识点",
         },
         component: () => import("/@/views/data-structures-operators/index.vue"),
+      },
+      {
+        path: "/dataStructuresOperators/codeChallenge",
+        name: "DataCodeChallenge",
+        meta: {
+          title: "编码挑战",
+        },
+        component: () =>
+          import("/@/views/data-structures-operators/codeChallenge.vue"),
       },
     ],
   },

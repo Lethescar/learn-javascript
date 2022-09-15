@@ -6,7 +6,7 @@
         <a-col :span="11" class="text-left">
           <!-- S 变量命名规则 -->
           <div>
-            <p class="text-[28px]">变量命名规则</p>
+            <p class="text-[28px]">一、变量命名规则</p>
             <p>①变量命名必须以字母、下划线”_”或者”$”为开头。其他字符可以是字母、_、美元符号或数字;</p>
             <p>②变量名中不允许使用空格和其他标点符号,首个字不能为数字；</p>
             <p>③变量名长度不能超过255个字符;</p>
@@ -18,14 +18,14 @@
 
           <!-- S 数据类型 -->
           <div>
-            <p class="text-[28px]">数据类型</p>
+            <p class="text-[28px]">二、数据类型</p>
             <p>Number String Boolean Undefined Null Symbol Bigint</p>
           </div>
           <!-- E 数据类型 -->
 
           <!-- S let,var,const区别 -->
           <div>
-            <p class="text-[28px]">let,const,var区别</p>
+            <p class="text-[28px]">三、let,const,var区别</p>
             <p>块级作用域： let 和 const 具有块级作用域,var 不存在块级作用域。块级作用域解决了 ES5 中的两个问题：内层变量可能覆盖外层变量；用来计数的循环变量泄露为全局变量。</p>
             <p>变量提升： var 存在变量提升,let 和 const 不存在变量提升,即在变量只能在声明之后使用,否在会报错。</p>
             <p>给全局添加属性： var 声明的变量为全局变量,并且会将该变量添加为全局对象的属性,但是 let 和 const 不会。</p>
@@ -38,7 +38,7 @@
 
           <!-- S 运算符优先级 -->
           <div>
-            <p class="text-[28px]">运算符优先级</p>
+            <p class="text-[28px]">四、运算符优先级</p>
             <a-table size="small" :columns="columns" :data-source="data" bordered :pagination="false"
               :scroll="{ y: 600 }">
             </a-table>
@@ -53,7 +53,7 @@
         <a-col :span="11" class="text-left">
           <!-- S js类型转换 -->
           <div>
-            <p class="text-[28px]">js类型转换</p>
+            <p class="text-[28px]">五、js类型转换</p>
             <p>在 JavaScript 有两种类型转换的方式,分别是隐式类型转换和强制类型转换。</p>
             <p class="font-medium">隐式类型转换:</p>
             <div class="pl-4">
@@ -101,7 +101,7 @@
 
           <!-- S '=='与'==='区别 -->
           <div>
-            <p class="text-[28px]">'=='与'==='区别</p>
+            <p class="text-[28px]">六、'=='与'==='区别</p>
             <p>双等号==:</p>
             <ul class="list-disc ml-4">
               <li>
@@ -153,7 +153,6 @@ import { columns, data } from './data'
 
 let count = 40 + 8 + 23 - 10
 // console.log('计算值:', count);
-
 
 /*
 编码挑战 #1

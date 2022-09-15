@@ -6,7 +6,7 @@
         <a-col :span="11" class="text-left">
           <!-- S js 函数 -->
           <div>
-            <p class="text-[28px]">js 函数</p>
+            <p class="text-[28px]">一、js 函数</p>
             <p>函数是被设计为执行特定任务的代码块,会在某代码调用它时被执行</p>
             <p>parameters是在函数定义中所列的名称,arguments是当调用函数时由函数接收的真实的值。在函数中,参数是局部变量</p>
             <p class="font-semibold">函数调用</p>
@@ -29,7 +29,7 @@
 
           <!-- S js 数组 -->
           <div>
-            <p class="text-[28px]">js 数组</p>
+            <p class="text-[28px]">二、js 数组</p>
             <p>数组是一种特殊的变量，它能够一次存放一个以上的值</p>
             <p class="font-semibold">数组创建方法</p>
             <p>语法1: let arrayName = [item1, item2, ...]</p>
@@ -64,7 +64,7 @@
         <a-col :span="11" class="text-left">
           <!-- S js 对象 -->
           <div>
-            <p class="text-[28px]">js 对象</p>
+            <p class="text-[28px]">三、js 对象</p>
             <p>对象是拥有属性和方法的数据</p>
             <p>对象可以包含多个值（多个变量），每个值以 name:value 对呈现</p>
             <p class="font-semibold">对象创建方法</p>
@@ -74,7 +74,7 @@
 
           <!-- S js 数组\对象区别 -->
           <div>
-            <p class="text-[28px]">js 数组\对象区别</p>
+            <p class="text-[28px]">四、js 数组\对象区别</p>
             <p>数组使用数字索引,对象使用命名索引</p>
             <p>数组是特殊类型的对象，具有数字索引</p>
             <p>JavaScript 不支持关联数组</p>

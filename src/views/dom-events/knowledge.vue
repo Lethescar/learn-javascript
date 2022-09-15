@@ -6,7 +6,7 @@
         <a-col :span="11" class="text-left">
           <!-- S dom.querySelector() -->
           <div>
-            <p class="text-[28px]">dom.querySelector()</p>
+            <p class="text-[28px]">一、dom.querySelector()</p>
             <p>querySelector() 方法返回文档中匹配指定 CSS 选择器的一个元素。</p>
             <p>注意： querySelector() 方法仅仅返回匹配指定选择器的第一个元素。如果你需要返回所有的元素，请使用 querySelectorAll() 方法替代。</p>
           </div>
@@ -14,7 +14,7 @@
 
           <!-- S element.addEventListener() -->
           <div>
-            <p class="text-[28px]">element.addEventListener()</p>
+            <p class="text-[28px]">二、element.addEventListener()</p>
             <p>addEventListener() 方法用于向指定元素添加事件句柄。</p>
             <p>提示： 使用 removeEventListener() 方法来移除 addEventListener() 方法添加的事件句柄。</p>
           </div>
@@ -22,7 +22,7 @@
 
           <!-- S Dom style 对象 -->
           <div>
-            <p class="text-[28px]">Dom style 对象</p>
+            <p class="text-[28px]">三、Dom style 对象</p>
             <p>设置 指定元素的css样式</p>
             <p>document.querySelector("xx").style.property="xxx"</p>
           </div>
@@ -30,7 +30,7 @@
 
           <!-- S input输入框value -->
           <div>
-            <p class="text-[28px]">input输入框value</p>
+            <p class="text-[28px]">四、input输入框value</p>
             <p>设置 指定输入框的内容</p>
             <p>document.querySelector("xx").value="xxx"</p>
           </div>
@@ -42,7 +42,7 @@
         <a-col :span="11" class="text-left">
           <!-- S DOM classList 属性 -->
           <div>
-            <p class="text-[28px]">DOM classList 属性</p>
+            <p class="text-[28px]">五、DOM classList 属性</p>
             <p>classList 属性返回元素的类名，作为 DOMTokenList 对象。</p>
             <p>该属性用于在元素中添加，移除及切换 CSS 类。</p>
             <a-table size="small" :columns="classListColumns" :data-source="classListData" bordered :pagination="false"
