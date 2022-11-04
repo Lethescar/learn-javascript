@@ -4,7 +4,9 @@
       <p class="text-[50px] ">Data structures and modern operators</p>
       <a-row>
         <a-col :span="11" class="text-left"></a-col>
-        <a-col :span="2" class="text-left"></a-col>
+        <a-col :span="2" class="text-left">
+          <a-divider type="vertical" class="!h-full !border-white" dashed />
+        </a-col>
         <a-col :span="11" class="text-left"></a-col>
       </a-row>
     </div>

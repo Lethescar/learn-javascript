@@ -113,4 +113,74 @@ export default [
       },
     ],
   },
+  {
+    path: "/functions",
+    name: "Functions",
+    meta: {
+      title: "函数",
+    },
+    component: () => import("/@/views/layout/Index.vue"),
+    children: [
+      {
+        path: "/functions/knowledge",
+        name: "FunctionsKnowledge",
+        meta: {
+          title: "知识点",
+        },
+        component: () => import("/@/views/functions/index.vue"),
+      },
+      {
+        path: "/functions/codeChallenge",
+        name: "FunctionsCodeChallenge",
+        meta: {
+          title: "编码挑战",
+        },
+        component: () => import("/@/views/functions/codeChallenge.vue"),
+      },
+    ],
+  },
+  {
+    path: "/arrays",
+    name: "Arrays",
+    meta: {
+      title: "数组",
+    },
+    component: () => import("/@/views/layout/Index.vue"),
+    children: [
+      {
+        path: "/arrays/knowledge",
+        name: "ArraysKnowledge",
+        meta: {
+          title: "知识点",
+        },
+        component: () => import("/@/views/arrays/index.vue"),
+      },
+      {
+        path: "/arrays/codeChallenge",
+        name: "ArraysCodeChallenge",
+        meta: {
+          title: "编码挑战",
+        },
+        component: () => import("/@/views/arrays/codeChallenge.vue"),
+      },
+    ],
+  },
+  {
+    path: "/numbersDateTimers",
+    name: "NumbersDateTimers",
+    meta: {
+      title: "数字、日期、计时器",
+    },
+    component: () => import("/@/views/layout/Index.vue"),
+    children: [
+      {
+        path: "/numbersDateTimers/index",
+        name: "numbersDateTimersIndex",
+        meta: {
+          title: "知识点",
+        },
+        component: () => import("/@/views/numbers-date-timers/index.vue"),
+      },
+    ],
+  },
 ];
